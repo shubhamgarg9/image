@@ -19,4 +19,11 @@ class ImagesController < ApplicationController
     redirect_to images_path
   end
 
+  def temp
+  	@image = Image.find(10)
+  	if @image
+  		redirect_to images_path
+  	end
+  end
+
 end
