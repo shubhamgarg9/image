@@ -1,4 +1,3 @@
-<%= @images.each do |image| %>
-	<!-- <img src="/public/uploads/<% image.pic %>" > -->
-	<%= image_tag "public/uploads/#{image.pic}"%>
+<% @images.each do |image| %>
+	<%= image_tag("/uploads/#{image.pic}", size: "250x150") %><br><br>
 <% end %>
