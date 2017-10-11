@@ -10,7 +10,7 @@ class ImagesController < ApplicationController
 
   def create
   	# binding.pry
-  	new_name = SecureRandom.hex + "_" + params["picture"].original_filename
+  	new_name = SecureRandom.hex + "." + params["picture"].original_filename
   	# Uploading image here
   	File.open(Rails.root.join('public', 'uploads', new_name), 'wb') do |file|
     	file.write(params[:picture].read)
