@@ -1,0 +1,6 @@
+
+
+<%= form_tag({action: :create}, multipart: true) do %>
+  <%= file_field_tag 'picture' %>
+  <%= submit_tag 'submit' %>
+<% end %>

@@ -1,0 +1,4 @@
+<%= @images.each do |image| %>
+	<!-- <img src="/public/uploads/<% image.pic %>" > -->
+	<%= image_tag "public/uploads/#{image.pic}"%>
+<% end %>
